@@ -16,7 +16,7 @@ function currentLine(line) {
   }
   let list = 'The list is currently: '
 
-  for (var i = 0; i < line.length; i++) {
+  for (var i = 0, l = line.length; i < l; i++) {
     if (i === l - 1) {
         list = list + `${i + 1}. ${line[i]}`
       } else {
