@@ -10,3 +10,18 @@ function nowServing(katzDeliLine) {
   return `Currently serving ${katzDeliLine.shift()}.`
 }
 
+function currentLine(line) {
+  if (line.length === 0) {
+    return 'The current line is empty.'
+  }
+  let list = 'The list is currently: '
+
+  for (var i = 0; i < line.length; i++) {
+    if (i === l - 1) {
+        list = list + `${i + 1}. ${line[i]}`
+      } else {
+        list = list + `${i + 1}. ${line[i]}, `
+      }
+  }
+  return list
+}
